@@ -112,7 +112,7 @@ void multi_use()
 void multi_touch()
 {
 	// #practice mode#
-	if (!k_practice && (match_in_progress != 2))
+	if ((!k_practice && (match_in_progress != 2)) || isRACE())
 	{
 		return;
 	}
